@@ -53,7 +53,7 @@ public class App42GCMController {
     /**
      * This function used to get GCM Registration Id from New API
      * @param context
-     * @return
+     * @return a string
      */
     @SuppressLint("NewApi")
     public static String getRegistrationId(Context context) {
@@ -125,7 +125,6 @@ public class App42GCMController {
     }
     /**
      * @param context
-     * @param regId
      */
     public static void storeApp42Success(Context context) {
         final SharedPreferences prefs = getGCMPreferences(context);
